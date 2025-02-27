@@ -10,6 +10,7 @@
 }
 
 section{
+    height: 100dvh;
     justify-self: center;
     align-self: center;
 }
