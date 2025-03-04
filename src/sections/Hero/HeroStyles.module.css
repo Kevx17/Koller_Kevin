@@ -5,14 +5,18 @@
     align-items: center;
     gap: 20px;
     text-align: center;
-    height: 100dvh;
+    min-height: 100dvh;
     min-height: 500px;
 }
 
 section{
-    height: 100dvh;
     justify-self: center;
     align-self: center;
+}
+
+.heroSection{
+    height: 100dvh;
+    min-height: 700px;
 }
 
 .hero{
@@ -151,5 +155,12 @@ button:active {
 @keyframes typing {
     100%{
         left: 114%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero{
+        width: 200px;
+        border-radius: 50%;
     }
 }

@@ -18,8 +18,13 @@ function Hero() {
   const tt = theme === 'light' ? ttDark : ttLight;
   const insta = theme === 'light' ? instaDark : instaLight;
 
+  const scrollToSection = () => {
+    const target = document.getElementById("contact").offsetTop;
+    window.scrollTo({ top: target, behavior: "smooth" });
+  };
+
   return (
-      <section id='hero'>
+      <section id='hero' className={styles.heroSection}>
         <div className={styles.colorModeContainer}>
             <img className={styles.hero} src={heroImg} alt="Profile picture of me" />
             <img className={styles.colorMode} src={themeIcon} alt="Color mode icon"  onClick={toggleTheme}/>
@@ -51,7 +56,7 @@ function Hero() {
             </span>
             <p className={styles.description}>With a passion for creating, I’m crafting riffs, writing code, and shaping digital spaces.</p>
             <br />
-            <button>View More</button>
+            <button onClick={scrollToSection}>Reach Out</button>
         </div>
       </section>
   )

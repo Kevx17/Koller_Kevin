@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 25dvh;
+    flex-grow: 1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input{
+    max-width: 400px;
+    width: 80vw; 
+    height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+    font-size: small;
+    text-align: center;
+    border-radius: 8px;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{
+    max-width: 400px;
+    width: 80vw;
+    height: 200px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+    font-size: small;
+    text-align: center;
+    border-radius: 8px;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+input[type=submit]{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 8px;
+    width: 248px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    align-self: center;
+}
+
+input[type=submit]:hover{
+    transform: scale(1.05);
+}

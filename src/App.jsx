@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './sections/Hero/Hero'
-import Projects from './sections/Projects/Projects'
+//import Projects from './sections/Projects/Projects'
+import Contact from './sections/Contact/Contact'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <Hero/>
-      <Projects></Projects>
+      <Contact/>
     </>
   )
 }
